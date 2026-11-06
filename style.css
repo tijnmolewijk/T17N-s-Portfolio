@@ -1,0 +1,342 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #090909;
+    color: #f2eee8;
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(0,0,0,0.85),
+            rgba(0,0,0,0.45)
+        ),
+        url("images/hero-background.png");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 60px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+}
+
+.navigation-links {
+    display: flex;
+    gap: 40px;
+}
+
+.navigation-links a {
+    color: white;
+    text-decoration: none;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 700px;
+
+    padding-left: 80px;
+}
+
+.hero-title {
+    font-size: 7rem;
+    font-weight: 300;
+}
+
+.hero-subtitle {
+    font-size: 1.6rem;
+
+    margin-bottom: 30px;
+
+    letter-spacing: 4px;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+    max-width: 600px;
+}
+
+.hero-button {
+    width: fit-content;
+
+    text-decoration: none;
+    color: white;
+
+    border: 1px solid #c39a63;
+
+    padding: 16px 30px;
+
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #c39a63;
+    color: black;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-text-container {
+    flex: 1;
+}
+
+.about-image-container {
+    flex: 1;
+}
+
+.about-image-container img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.about-section {
+    padding: 120px 10%;
+}
+
+.section-title {
+    font-size: 3rem;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 5px;
+}
+
+.about-text {
+    max-width: 800px;
+
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-card {
+    border: 1px solid #c39a63;
+
+    padding: 15px 25px;
+
+    color: #c39a63;
+}
+
+
+/* =========================
+   PORTFOLIO SECTIONS
+========================= */
+
+.portfolio-section {
+    padding: 80px 10%;
+}
+
+.portfolio-text {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   SLIDESHOW
+========================= */
+
+.spero-slide{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:none;
+}
+
+.active-slide{
+    display:block;
+}
+
+.slideshow-container{
+    position: relative;
+}
+
+.slide-button{
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+
+    border: none;
+
+    padding: 15px 20px;
+
+    cursor: pointer;
+
+    font-size: 1.5rem;
+}
+
+.previous-button{
+    left: 15px;
+}
+
+.next-button{
+    right: 15px;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.atera-slide{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:none;
+}
+
+.atera-active-slide{
+    display:block;
+}
+
+.atera-slideshow-container{
+    position:relative;
+}
+
+.atera-previous-button{
+    left: 15px;
+}
+
+.atera-next-button{
+    right: 15px;
+}
+
+.concept-slide{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:none;
+}
+
+.concept-active-slide{
+    display:block;
+}
+
+.concept-slideshow-container{
+    position:relative;
+    height:700px;
+}
+
+.concept-previous-button{
+    left:15px;
+}
+
+.concept-next-button{
+    right:15px;
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer-section {
+    padding: 120px 10%;
+
+    border-top: 1px solid #222;
+}
+
+.social-links{
+    display:flex;
+    gap:30px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    color:#c39a63;
+    text-decoration:none;
+    border:1px solid #c39a63;
+    padding:12px 24px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    background-color:#c39a63;
+    color:#090909;
+}
